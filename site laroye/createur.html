@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style pour la fiche du créateur */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden; /* Empêche le défilement horizontal */
+        }
+        #background-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify; /* Justifie le texte */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Style pour les images adjacentes */
+        .createur-container {
+            display: flex;
+            flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+            justify-content: center; /* Centre les éléments sur la ligne principale */
+            margin-bottom: 20px;
+        }
+        .createur-adjacent {
+            width: 30%; /* Taille initiale réduite par 5 */
+            max-width: 120px; /* Largeur maximale ajustée */
+            border-radius: 50%; /* Forme ovale */
+            cursor: pointer; /* Curseur pointer pour indiquer la possibilité de cliquer */
+            transition: transform 0.3s ease; /* Transition pour l'effet de zoom */
+            margin: 0 10px 20px; /* Espacement réduit entre les images */
+            position: relative; /* Position relative pour inclure le texte */
+            text-align: center; /* Centre le texte insta */
+        }
+        .createur-adjacent img {
+            display: block;
+            width: 100%;
+            border-radius: 50%;
+        }
+        .createur-caption {
+            position: absolute;
+            bottom: -30px; /* Ajuste la position verticale du texte */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 2; /* S'assurer que la légende est au-dessus de l'image */
+        }
+        .insta-button {
+            display: inline-block;
+            background-color: #e4405f; /* Couleur de fond Instagram */
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            margin-top: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .insta-button:hover {
+            background-color: #ca2e4a; /* Couleur de fond au survol */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="fond.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <h1><a href="index.html">Créateur</a></h1>
+    </header>
+    <main>
+        <section>
+            <div class="createur-container">
+                <div class="createur-adjacent">
+                    <img src="createur.jpg" alt="Photo du créateur">
+                    <div class="createur-caption"><a href="https://www.instagram.com/rouxmathieu1403/" class="insta-button">insta:mathieu roux</a></div>
+                </div>
+            </div>
+            <p>Merci infiniment, Mme Laroye, pour ces trois années exceptionnelles de cours (2021-2024). Votre passion pour l'enseignement de l'Histoire, de la Géographie et de l'EMC a illuminé nos journées de classe. Vous avez su captiver notre attention avec vos anecdotes passionnantes sur le passé, nous faire voyager à travers les continents avec la Géographie, et nous sensibiliser aux enjeux sociétaux cruciaux abordés en EMC.</p>
+            <p>Votre dévouement envers votre métier et envers nous, vos élèves, ne passe pas inaperçu. Chaque jour, vous avez su nous inspirer, nous encourager à penser par nous-mêmes et à remettre en question nos perceptions du monde. Les discussions que vous avez initiées sur des sujets parfois délicats comme le racisme, les préjugés, le sexisme et les violences faites aux femmes resteront gravées dans nos mémoires.</p>
+            <p>Nous sommes reconnaissants d'avoir eu la chance de vous avoir comme professeure. Vous avez su créer un environnement d'apprentissage stimulant et bienveillant où chacun de nous a pu grandir intellectuellement et personnellement. Vous avez été bien plus qu'une enseignante pour nous, vous avez été une guide et une source d'inspiration.</p>
+            <p>Merci encore pour tout ce que vous avez fait pour nous. Ces années resteront des moments précieux dans nos vies, et nous emportons avec nous non seulement des connaissances solides mais aussi des valeurs essentielles que vous nous avez aidé à comprendre et à intégrer.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site de cours de Mme Laroye</p>
+    </footer>
+</body>
+</html>

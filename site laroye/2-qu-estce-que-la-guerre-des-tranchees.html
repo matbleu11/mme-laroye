@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 1 - La Première Guerre Mondiale : Qu'est-ce que la guerre des tranchées ?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .next-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .next-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .next-button:hover {
+            background-color: #777;
+            transform: scale(1.05); /* Zoom effect on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover */
+        }
+
+        /* Dégradé de gris au survol pour tous les boutons */
+        .category-button, .next-button {
+            position: relative;
+            overflow: hidden;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .category-button::before, .next-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 0;
+        }
+
+        .category-button:hover::before, .next-button:hover::before {
+            opacity: 1;
+            width: 350%;
+            height: 350%;
+        }
+
+        .category-button span, .next-button span {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="fond.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <header>
+        <h1>Chapitre 1 - La Première Guerre Mondiale : Qu'est-ce que la guerre des tranchées ?</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Qu'est-ce que la guerre des tranchées ?</h2>
+            <h3>L'exemple de la bataille de la Somme</h3>
+            <p>La bataille de la Somme débute le 1er juillet 1916 et se termine le 18 novembre de la même année. C'est l'une des batailles les plus meurtrières de la Première Guerre Mondiale. La Somme se situe dans le nord de la France, sur une ligne de front de 700 km.</p>
+            <p>Les Britanniques lancent une offensive pour tenter de percer le front. Les forces en présence sont comparables et aucune ne domine réellement. Les poilus s’enterrent dans des tranchées d'environ 2,50m de profondeur. Les conditions y sont épouvantables : le froid, la faim, les rats, la fatigue, l’hygiène, les poux, les maladies, la boue, le bruit, la peur, la mort.</p>
+            <p>La guerre des tranchées est d'une violence extrême. L'ennemi est tué par baïonnette, par couteau, par l'artillerie (plus de 70% des morts), par les obus, les mines, le gaz moutarde, les lance-flammes, les mitrailleuses, les chars (tanks) font des ravages et sont destructeurs comme jamais auparavant.</p>
+            <p>Le bilan de la bataille de la Somme compte plus de 1 million de victimes (morts, blessés et disparus).</p>
+        </section>
+
+        <!-- Bouton pour la Partie 3 -->
+        <div class="next-button-container">
+            <button onclick="location.href='3 quelles-violences-sont-infligées-au-civile.html'" class="next-button">Partie 3</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site de cours de Mme Laroye</p>
+    </footer>
+</body>
+</html>
